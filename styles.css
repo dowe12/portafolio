@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.click {
+    cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #060000;
+}
+
+/* navbar */ 
+
+/* Base styles for the navbar */
+.navbar {
+    background-color: #060000;
+    overflow: hidden;
+  }
+  
+  .navbar a {
+    margin-top: 20px;
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .navbar {
+      display: none; 
+    }
+}
+  
+
+/*header*/
+
+.header__desc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+     max-width: 1000px;
+     padding: 0 30px;
+ }
+
+  
+  .header__img {
+    float: right;
+    width: 30%; 
+  }
+ 
+ .header__title {
+     font-size: 112px;
+     color: aliceblue;
+ }
+ 
+ .header__para {
+     font-size: 24px;
+     max-width: 450px;
+     color: aliceblue;
+ }
+ 
+ .header__social {
+     display: flex;
+     margin-top: 30px;
+ }
+ 
+ .header__social--list {
+     background-color: white;
+     border-radius: 50px;
+     width: 32px;
+     height: 32px;
+     font-size: 14px;
+     padding: 6px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-right: 12px;
+     transition: all 450ms ease;
+ }
+ 
+ .header__social--link {
+     color: black;
+     transition: all 450ms ease;
+ }
+ 
+ 
+ .header__social--list:hover, .header__social--link:hover {
+     opacity: 0.7;
+     transform: scale(1.2);
+ }
+
+
+.background-section{
+    background-color:aliceblue;
+    height: auto;
+}
+
+/* about */
+
+#about {
+    
+    margin-top: 800px;
+   
+}
+
+
+.about_title{
+    padding-top: 25px;
+    font-size: 40px;
+     color: black;
+     text-align: center;
+}
+
+.about_img {
+    margin-top: 40px;
+    width: 350px;
+    margin-right: 10%;
+    float: right;
+    border-radius: 50%;
+    box-shadow: 0 12px 80px 0 rgb(0, 0, 0, 0.4);
+}
+
+.about__container {
+    display: grid;
+    grid-template-columns: 2.5fr 3fr; 
+    gap: 20px; 
+  
+  
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr; 
+    }
+  }
+
+.about_description{
+    font-size: 20px;
+    align-items: center;
+    margin: 40px;
+   
+}
+
+
+.curriculum-button{
+
+    border-radius: 50px;
+    font-size: 20px;
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: #060000;
+   
+    margin-left: 30%;
+}
+
+/* technologies */ 
+
+.tech__stack--title {
+    margin-top: 140px;
+    padding: 50px 0;
+    text-align: center;
+    font-size: 40px;
+}
+
+.tech__stack--list {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tech__stack--container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+
+.tech__stack--img {
+    margin: 32px 24px;
+    text-align: center;    
+    transition: all 300ms;
+}
+
+.tech__stack--container:hover .tech__stack--img:hover {
+    filter: brightness(75%);
+    opacity: 0.85;
+    transform: scale(0.9);
+}
+
+.tech__stack--img img {
+    width: 110px;
+    height: 100px;
+}
+
+/*  projects  */
+
+.project--title{
+    margin-top: 100px;
+    padding: 50px 0;
+    text-align: center;
+    font-size: 40px;
+
+}
+
+
+.footer{
+
+    padding: 24px;
+    background-color: white;
+}
+
+.footer--text{
+
+   text-align: center;
+}
+
+
+/* star background*/
+/*http://redeando.blogspot.com/2014/06/body-background-animacion-css.html*/
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+.estrellas {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+body {
+  background:#000 url(http://1.bp.blogspot.com/-q7NYia_DjQI/U4t7_J4gwwI/AAAAAAAAMKo/nru4YxfjK6I/s1600/estrellas.png) repeat top center;
+}
+
+.estrellas{
+  background:transparent url(http://3.bp.blogspot.com/-FwB8aSiMBmI/U4t9MkimRrI/AAAAAAAAMK0/FAlqX8ZFyu8/s1600/twinkling.png) repeat top center;
+  z-index:-2;
+
+  -moz-animation:move-twink-back 100s linear infinite;
+  -ms-animation:move-twink-back 100s linear infinite;
+  -o-animation:move-twink-back 100s linear infinite;
+  -webkit-animation:move-twink-back 100s linear infinite;
+  animation:move-twink-back 100s linear infinite;
+}
+
+.txt-button{
+    color: white;
+    font-weight: bold;
+}
